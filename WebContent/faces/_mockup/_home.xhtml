@@ -1,4 +1,5 @@
-<html xmlns:ui="http://java.sun.com/jsf/facelets"
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html">
 
 <head>
@@ -14,7 +15,7 @@
 <script src="../../resources/js/jqBootstrapValidation.js"></script>
 <script>
 	$(function() {
-		$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+		$("input,select,textarea").jqBootstrapValidation();
 	});
 </script>
 <!-- Activate number 'li' into nav-bar -->
@@ -75,8 +76,8 @@
 
 
 	<!-- *******Modal_ENTER window - start******* -->
-	<ui:insert name="modal_enter">
-		<ui:include src="include/modal_enter.xhtml" />
+	<ui:insert name="modal_enter" >
+		<ui:include src="include/modal_enter.xhtml"/>
 	</ui:insert>
 	<!-- *******Modal_enter window - end******* -->
 
