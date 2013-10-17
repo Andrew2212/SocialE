@@ -1,0 +1,97 @@
+<html xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+
+<title>Social-E</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../../resources/css/custom.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="../../resources/js/bootstrap.min.js"></script>
+<script src="../../resources/js/modal.js"></script>
+<script src="../../resources/js/jqBootstrapValidation.js"></script>
+<script>
+	$(function() {
+		$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+	});
+</script>
+<!-- Activate number 'li' into nav-bar -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#tabs li:eq(1)").addClass("active")
+	});
+</script>
+</head>
+
+<body>
+	<!--*******Header - start*******-->
+	<ui:insert name="header">
+		<ui:include src="include/header.xhtml" />
+	</ui:insert>
+	<!--*******Header - end*******-->
+
+
+	<!--*******Block LookingFor - start*******-->
+	<div class="container" style="text-align: center">
+
+		<ui:insert name="lookingFor">
+			<ui:include src="include/stringLookingFor.xhtml" />
+		</ui:insert>
+
+	</div>
+	<!--*******Block LookingFor - end*******-->
+
+
+	<!-- *******CentralRowBlock - start******* -->
+	<div class="container">
+		<div class="row">
+
+			<!--*******Left block - OriginalLinksBlock*******-->
+			<div class="span2"></div>
+
+			<!--*******Center block - Text*******-->
+			<div class=" span6 offset1">
+				<h3 style="text-align: center;">About Project</h3>
+				<embed src="../../resources/txt/loremIpsum.html"
+					style="height: 300px; width: 100%"></embed>
+			</div>
+
+			<!--*******Right block - EnterOrRegistratioin*******-->
+			<!-- ***String Registration - start*** -->
+			<div class="span2 offset1" style="text-align: center">
+				<ui:insert name="registration">
+					<ui:include src="include/stringRegistration.xhtml" />
+				</ui:insert>
+			</div>
+			<!-- ***String Registration - end*** -->
+		</div>
+
+	</div>
+	<!-- *******CentralRowBlock - end******* -->
+
+
+	<!-- *******Modal_ENTER window - start******* -->
+	<ui:insert name="modal_enter">
+		<ui:include src="include/modal_enter.xhtml" />
+	</ui:insert>
+	<!-- *******Modal_ENTER window - end******* -->
+
+
+	<!-- *******Modal_REGISTRATION window - start******* -->
+	<ui:insert name="modal_registration">
+		<ui:include src="include/modal_registration.xhtml" />
+	</ui:insert>
+	<!-- *******Modal_REGISTRATION window - end******* -->
+
+
+	<!--*******Footer start*******-->
+	<ui:insert name="footer">
+		<ui:include src="include/footer.xhtml" />
+	</ui:insert>
+	<!--*******Footer end*******-->
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+<html xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<div class="modal fade" style="text-align: center" id="modal_enter">
+
+	<div class="modal-header well">
+		<a class="close" data-dismiss="modal">X</a>
+		<h4 class="text-success">Authorization</h4>
+	</div>
+
+	<div class="modal-body ">
+
+		<form method="POST" action="" accept-charset="UTF-8">
+
+			<div class="control-group">
+				<label class="control-label">Your login</label>
+				<div class="controls">
+					<input type="text" class="span4" name="login" required="required"
+						title="Enter your login" placeholder="Your login"/>
+					<p class="help-block"></p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label">Password</label>
+				<div class="controls">
+					<input type="password" class="span4" name="password"
+						required="required" title="Enter pasword please"
+						placeholder="Password" />
+					<p class="help-block"></p>
+				</div>
+			</div>
+
+			<button type="submit" name="submit" class="btn btn-success">
+				Submit <i class="icon-ok icon-white"></i>
+			</button>
+
+		</form>
+	</div>
+</div>
+
+</html>

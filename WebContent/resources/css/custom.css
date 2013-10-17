@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+H4 {
+  color: gray; 
+  font-weight: lighter
+}
+
+H3 {
+  color: gray; 
+  font-weight: lighter
+}
+
+H2 {
+  color: gray; 
+  font-weight: lighter
+}
+
+.light {
+  color: gray; 
+  font-weight: lighter
+}

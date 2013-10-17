@@ -1,0 +1,46 @@
+<html xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<div class="modal fade" style="text-align: center"
+	id="modal_registration">
+
+	<div class="modal-header well">
+		<a class="close" data-dismiss="modal">X</a>
+		<h4 class="text-success">Registration</h4>
+	</div>
+
+	<div class="modal-body ">
+
+		<form method="POST" action="" accept-charset="UTF-8">
+			<div class="control-group">
+				<label class="control-label">Email address</label>
+				<div class="controls">
+					<input type="email" class="span4" name="email" required="required"
+						title="Set your mail"
+						data-validation-email-message="That'll never fly!"
+						placeholder="Your Email" />
+					<p class="help-block"></p>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label">Type it again</label>
+				<div class="controls">
+					<input type="text" class="span4" name="emailAgain"
+						required="required" title="Set your mail again"
+						data-validation-matches-match="email"
+						data-validation-matches-message="Must match email address entered above"
+						placeholder="Repeat Your Email" />
+					<p class="help-block"></p>
+				</div>
+			</div>
+
+			<button type="submit" name="submit" class="btn btn-success">
+				Submit <i class="icon-ok icon-white"></i>
+			</button>
+
+		</form>
+	</div>
+</div>
+
+</html>

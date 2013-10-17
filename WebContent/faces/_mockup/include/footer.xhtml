@@ -1,0 +1,27 @@
+
+<html xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<div class="container">
+	<ul class="nav nav-list">
+		<!--It's just line-->
+		<li class="divider"></li>
+	</ul>
+
+	<nav id="footer" xmlns:h="http://java.sun.com/jsf/html">
+		<h:form>
+			<a href="http://twitter.com/b0noi">@b0noI</a>
+			<span style="float: right;"> Signed in as <a
+				href="http://twitter.com/b0noi" class="navbar-link">#{footerBean.getLogin()}</a>
+				/ <h:commandLink action="#{footerBean.logOut}" value="LogOut" />
+			</span>
+		</h:form>
+	</nav>
+
+	<ul class="nav nav-list">
+		<!--It's just line-->
+		<li class="divider"></li>
+	</ul>
+</div>
+
+</html>
